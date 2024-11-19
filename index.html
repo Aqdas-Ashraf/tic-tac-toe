@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+            </style>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Sofia&display=swap');
+                </style>
+                
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Rubik+Bubbles&family=Sofia&display=swap');
+                    </style>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Permanent+Marker&family=Rubik+Bubbles&family=Sofia&display=swap');
+                        </style>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-toc-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music">
+        <audio id="myAudio1" autoplay loop>
+       <source src="Cold Funk.mp3" type ="audio/mpeg" >music</audio>
+    </div>
+    <audio id="myAudio2">
+        <source src="click-new.mp4" type="audio/mpeg">
+    </audio>
+     <audio id="myAudio3">
+        <source src="applause.mp3" type="audio/mpeg">
+    </audio> 
+    <h1>Tic-Tac-Toe</h1>
+    <p id="Play">Play The Game!</p>
+
+    <h2 id="round">Round: 0/5</h2>
+    <div id="scores">
+ <p>X Wins: <span id="x-score">0</span></p>
+ <p>O Wins: <span id="o-score">0</span></p>
+   </div>
+
+    <div class="msg-container hide">
+   <div id="winner" class="winner-text">winner</div>
+   <button class="new-game">Next Round
+    <i class="fa-regular fa-circle-right"></i>
+    </div>
+    <main>
+    <div class="container">
+        <div class="game">
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+            <button onclick="playMusic2()"
+            class="box"></button>
+        </div>
+    </div>
+    <button class="reset">Reset Game</button>
+</main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
