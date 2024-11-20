@@ -101,11 +101,13 @@ let showwinner = (winner) => {
             msg.classList.add("winner");
             document.querySelector("#winner").innerHTML = `Final winner is X`;
             startConfetti();
+            playMusic3();
         } else if (oScore > xScore){
             msg.classList.remove("hide");
             msg.classList.add("winner");
            document.querySelector("#winner").innerHTML = `Final winner is O`;
            startConfetti();
+           playMusic3();
         } else{
             msg.classList.remove("hide");
             msg.classList.add("winner");
