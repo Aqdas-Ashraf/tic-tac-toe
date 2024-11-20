@@ -26,7 +26,7 @@ let xScore = 0;       // X player score
 let oScore = 0;       // O player score
 
 const updateRoundAndScore = () => {
-    document.getElementById("round").innerText = `Round: ${currentRound}/5`;
+    document.getElementById("round2").innerText = `Round: ${currentRound}/5`;
     document.getElementById("x-score").innerText = `${xScore}`;
     document.getElementById("o-score").innerText = `${oScore}`;
 };
