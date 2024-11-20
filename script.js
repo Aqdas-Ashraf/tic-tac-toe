@@ -100,16 +100,20 @@ let showwinner = (winner) => {
             msg.classList.remove("hide");
             msg.classList.add("winner");
             document.querySelector("#winner").innerHTML = `Final winner is X`;
+            startConfetti();
         } else if (oScore > xScore){
             msg.classList.remove("hide");
             msg.classList.add("winner");
            document.querySelector("#winner").innerHTML = `Final winner is O`;
+           startConfetti();
         } else{
             msg.classList.remove("hide");
             msg.classList.add("winner");
             document.querySelector("#winner").innerHTML = `No winner overall!`;
         }
          resetGame1();
+
+         newgame.innerHTML = `Play again`;
     }
 };
 
