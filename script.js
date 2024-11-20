@@ -2,8 +2,13 @@ let reset = document.querySelector(".reset");
 let newgame = document.querySelector(".new-game");
 let boxes = document.querySelectorAll(".box");
 let msg = document.querySelector(".msg-container");
-let audio1 = document.getElementById("myAudio1");
+const audio1 = document.getElementById("myAudio1");
 audio1.volume = 0.2;
+audio1.play();
+
+
+// document.body.style.overflowY = 'hidden';
+
 
 function playMusic2() {
     let audio2 = document.getElementById("myAudio2");
