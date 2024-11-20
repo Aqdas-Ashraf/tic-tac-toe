@@ -2,7 +2,7 @@ let reset = document.querySelector(".reset");
 let newgame = document.querySelector(".new-game");
 let boxes = document.querySelectorAll(".box");
 let msg = document.querySelector(".msg-container");
-const audio1 = document.getElementById("myAudio1");
+let audio1 = document.getElementById("myAudio1");
 audio1.volume = 0.2;
 audio1.play();
 
@@ -25,13 +25,13 @@ let maxRounds = 5;    // Total number of rounds
 let xScore = 0;       // X player score
 let oScore = 0;       // O player score
 
-const updateRoundAndScore = () => {
+let updateRoundAndScore = () => {
     document.getElementById("round2").innerText = `Round: ${currentRound}/5`;
     document.getElementById("x-score").innerText = `${xScore}`;
     document.getElementById("o-score").innerText = `${oScore}`;
 };
 
-const winPattern = [
+let winPattern = [
     [0, 1, 2],
     [0, 3, 6],
     [0, 4, 8],
@@ -65,20 +65,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const disableBtn = () => {
+let disableBtn = () => {
     for (const box of boxes) {
         box.disabled = true;
     }
 };
 
-const enableBtn = () => {
+let enableBtn = () => {
     for (const box of boxes) {
         box.disabled = false;
         box.innerText = "";
     }
 };
 
-const showwinner = (winner) => {
+let showwinner = (winner) => {
     msg.classList.remove("hide");
     msg.classList.add("winner");
     playMusic3();
@@ -144,6 +144,7 @@ const showdraw = () => {
     document.querySelector("#winner").innerHTML = "Game is Draw !!";
     msg.classList.remove("hide");
     msg.classList.add("draw");
+    newgame.innerHTML = `Play again`
     disableBtn();
 };
 

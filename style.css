@@ -46,17 +46,16 @@ main{
 }
 /* .round1{
     display: flex;
-    align-items: right;
+    align-items:center;
     justify-content: center;
-    width: 100%;
-    background-color: #0ff;
+    width: 15%;
 } */
 #round2{
-    width: 97%;
+    width: 98vw;
     position:relative;
     right: 2%;
     top: 0;
-    font-size: 5vw;
+    font-size: 2vw;
     color: #fff;
     text-shadow: 0 0 10px rgb(255, 102, 0),
     0 0 20px rgb(255, 102, 0),
@@ -165,7 +164,7 @@ h1{
 
 .new-game{
     border-radius: 50px;
-    font-size: 5vw;
+    font-size: 3vw;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color:pink;
     padding: 1vw;
@@ -264,7 +263,7 @@ h1{
     .container{
         flex-direction: row;
         margin-top: 18vw;
-        height:120vw;
+        height:100vw;
     }
     .game{
         height: 80vw;
@@ -280,10 +279,10 @@ h1{
         font-size: 10vw;
         padding: 3vw 5vw 3vw 5vw;
     }
-    #round{
-        font-size: 2vw;
-        top: 55%;
-        right: 7%;
+    #round2{
+        font-size: 4vw;
+        top: 7vw;
+        right: 5%;
         font-size: 5vw;
     }
     #scores{
