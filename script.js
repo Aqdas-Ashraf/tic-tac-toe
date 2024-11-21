@@ -94,20 +94,22 @@ let showwinner = (winner) => {
     // Start confetti effect for a round win
     startConfetti();
     // Check if max rounds are completed
+
+    newgame.innerHTML = `Next Round`;
 }
     else{
         if (xScore > oScore){
+            playMusic3();
             msg.classList.remove("hide");
             msg.classList.add("winner");
             document.querySelector("#winner").innerHTML = `Final winner is X`;
             startConfetti();
-            playMusic3();
         } else if (oScore > xScore){
+            playMusic3();
             msg.classList.remove("hide");
             msg.classList.add("winner");
            document.querySelector("#winner").innerHTML = `Final winner is O`;
            startConfetti();
-           playMusic3();
         } else{
             msg.classList.remove("hide");
             msg.classList.add("winner");
