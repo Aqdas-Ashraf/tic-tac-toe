@@ -81,10 +81,10 @@ let enableBtn = () => {
 let showwinner = (winner) => {
     msg.classList.remove("hide");
     msg.classList.add("winner");
-    playMusic3();
     currentRound++;
     if(currentRound < maxRounds){
-    document.querySelector("#winner").innerHTML = `Round-${currentRound} winner is ${winner}`;
+        document.querySelector("#winner").innerHTML = `Round-${currentRound} winner is ${winner}`;
+        playMusic3();
     if (winner === "X") {
         xScore++;
     } else if (winner === "O"){
@@ -98,23 +98,24 @@ let showwinner = (winner) => {
     newgame.innerHTML = `Next Round`;
 }
     else{
+        playMusic3();
+        msg.classList.remove("hide");
+        msg.classList.add("winner");
+        startConfetti();
         if (xScore > oScore){
-            playMusic3();
-            msg.classList.remove("hide");
-            msg.classList.add("winner");
             document.querySelector("#winner").innerHTML = `Final winner is X`;
-            startConfetti();
-        } else if (oScore > xScore){
-            playMusic3();
-            msg.classList.remove("hide");
-            msg.classList.add("winner");
-           document.querySelector("#winner").innerHTML = `Final winner is O`;
-           startConfetti();
         } else{
-            msg.classList.remove("hide");
-            msg.classList.add("winner");
-            document.querySelector("#winner").innerHTML = `No winner overall!`;
-        }
+            // playMusic3();
+            // msg.classList.remove("hide");
+            // msg.classList.add("winner");
+            // startConfetti();
+           document.querySelector("#winner").innerHTML = `Final winner is O`;
+        } 
+        // else{
+        //     msg.classList.remove("hide");
+        //     msg.classList.add("winner");
+        //     document.querySelector("#winner").innerHTML = `No winner overall!`;
+        // }
          resetGame1();
 
          newgame.innerHTML = `Play again`;
